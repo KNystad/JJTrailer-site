@@ -8,91 +8,91 @@ function App() {
   const trailers = [{
     type: 'JJ-Trailer Eagle - 4000-15',
     price: '125,000 NOK',
-    dimensions: '1850*4000',
+    dimensions: '1850x4000',
     weight: '1500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 4500-15',
     price: '133,700 NOK',
-    dimensions: '2100*4500',
+    dimensions: '2100x4500',
     weight: '1500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 4500-20',
     price: '151,800 NOK',
-    dimensions: '2100*4500',
+    dimensions: '2100x4500',
     weight: '2000 kg'
   }, {
     type: 'JJ-Trailer Eagle - 4500-25',
     price: '156,000 NOK',
-    dimensions: '2100*4500',
+    dimensions: '2100x4500',
     weight: '2500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5000-15',
     price: '148,000 NOK',
-    dimensions: '2100*5000',
+    dimensions: '2100x5000',
     weight: '1500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5000-20',
     price: '165,700 NOK',
-    dimensions: '2100*5000',
+    dimensions: '2100x5000',
     weight: '2000 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5000-25',
     price: '169,000 NOK',
-    dimensions: '2100*5000',
+    dimensions: '2100x5000',
     weight: '2500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5000-27',
     price: '173,180 NOK',
-    dimensions: '2100*5000',
+    dimensions: '2100x5000',
     weight: '2700 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5500-20',
     price: '172,000 NOK',
-    dimensions: '2100*5500',
+    dimensions: '2100x5500',
     weight: '2000 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5500-25',
     price: '177,625 NOK',
-    dimensions: '2100*5500',
+    dimensions: '2100x5500',
     weight: '2500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 5500-27',
     price: '183,270 NOK',
-    dimensions: '2100*5500',
+    dimensions: '2100x5500',
     weight: '2700 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6000-20',
     price: '180,740 NOK',
-    dimensions: '2100*6000',
+    dimensions: '2100x6000',
     weight: '2000 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6000-25',
     price: '183,560 NOK',
-    dimensions: '2100*6000',
+    dimensions: '2100x6000',
     weight: '2500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6000-27',
     price: '186,375 NOK',
-    dimensions: '2100*6000',
+    dimensions: '2100x6000',
     weight: '2700 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6500-20',
     price: '183,800 NOK',
-    dimensions: '2100*6500',
+    dimensions: '2100x6500',
     weight: '2000 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6500-25',
     price: '190,850 NOK',
-    dimensions: '2100*6500',
+    dimensions: '2100x6500',
     weight: '2500 kg'
   }, {
     type: 'JJ-Trailer Eagle - 6500-27',
     price: '192,500 NOK',
-    dimensions: '2100*6500',
+    dimensions: '2100x6500',
     weight: '2700 kg'
   }];
   const sellers = [{
-    name: 'Thorstein',
+    name: 'Thorstein Oppegård',
     phone: '+47 90 06 22 60',
     email: 'thorstein@jjtrailer.no',
     location: 'Sommersetlia 1, 9143 Skibotn'
@@ -105,7 +105,7 @@ function App() {
   return <>
       <Helmet>
         <title>JJ Trailer Norge - Professional trailer sales in Norway</title>
-        <meta name="description" content="Quality trailers for sale in Norway. Standard, flatbed, refrigerated, and tanker trailers available. Contact our sales team in Oslo and Bergen." />
+        <meta name="description" content="Quality trailers for sale in Norway. Standard trailers available. Contact our sales team in Troms." />
       </Helmet>
 
       {/* Header */}
@@ -141,6 +141,14 @@ function App() {
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Velg fra vårt utvalg av profesjonelle hengere, hver bygget etter norske standarder med kvalitetsmaterialer og pålitelig konstruksjon. <br />Forh.pris + mva. Frakt medkommer. <br />Kontakt oss for mer informasjon.
             </p>
+            <div className="max-w-4xl mx-auto mt-8 rounded-2xl border border-border/70 bg-muted/40 p-4 sm:p-6 shadow-sm">
+              <img
+                src="/TrailerImage.png"
+                alt="JJ Trailer produktbilde"
+                className="w-full h-auto rounded-xl object-contain mix-blend-multiply"
+                loading="lazy"
+              />
+            </div>
           </div>
 
           <div className="max-w-4xl mx-auto border-t border-border">
