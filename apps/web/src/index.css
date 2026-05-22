@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 100% 12.5%;
+    --card: 0 0% 98%;
+    --card-foreground: 210 100% 12.5%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 100% 12.5%;
+    --primary: 210 100% 12.5%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 210 20% 95%;
+    --secondary-foreground: 210 100% 12.5%;
+    --muted: 210 20% 95%;
+    --muted-foreground: 210 10% 40%;
+    --accent: 210 100% 20%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 20% 85%;
+    --input: 210 20% 85%;
+    --ring: 210 100% 12.5%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 100% 12.5%;
+    --foreground: 0 0% 98%;
+    --card: 210 80% 15%;
+    --card-foreground: 0 0% 98%;
+    --popover: 210 80% 15%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 210 100% 12.5%;
+    --secondary: 210 60% 20%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 210 60% 20%;
+    --muted-foreground: 210 20% 70%;
+    --accent: 210 100% 30%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 210 60% 20%;
+    --input: 210 60% 20%;
+    --ring: 210 100% 40%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "DM Sans", sans-serif;
+    overflow-x: clip;
+    line-height: 1.625;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+    line-height: 1.2;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl font-bold;
+    letter-spacing: -0.02em;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl font-bold;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl font-semibold;
+  }
+
+  p {
+    @apply max-w-prose;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
